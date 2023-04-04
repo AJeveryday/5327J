@@ -37,15 +37,7 @@ void initialize() {
 	//pros::Task catapultTask(catapult::move, (void*)1, TASK_PRIORITY_DEFAULT, TASK_STACK_DEPTH_DEFAULT, "Catapult Move");
 	pros::Task pathTask(lcd::generatePaths, nullptr, TASK_PRIORITY_DEFAULT, TASK_STACK_DEPTH_DEFAULT, "Path Generation");
 
-	//pros::lcd::initialize();
-
-	//pros::lcd::print(0, "Running init");
-
-	//catapult::tare(); // tare catapult at 0 pos being fired position
-	//descorer::init();
-	// pros::lcd::register_btn1_cb(lcd::pickMiddle); // TODO use PROS callbacks instead of my own polling
-	// pros::lcd::register_btn0_cb(lcd::pickLeft);
-	// pros::lcd::register_btn2_cb(lcd::pickRight);
+	
 }
 
 /**
@@ -65,12 +57,5 @@ void disabled() {}
  * starts.
  */
 void competition_initialize() {
-	//pros::lcd::print(0, "Running competition_initialize()");
-	// if (pros::competition::is_disabled()) {
-	// 	descorer::compInit();
-	// }
-	//odometry::init();
-	//catapult::tare();
-	//descorer::init();
-	//catapult::changeState(catapult::lowering);
+	
 }
